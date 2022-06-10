@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  SE UTILIZA PARA CREAR VARIABLES QUE SEAN REPETITIVAS EN EL SITIO WEWB COMO COLORES TAMAÑOS MARGENES ETC*/
+:root{
+--primary-color: #00ffff;
+--secundary-color: #0000ff;
+
+}
+body{
+    background: gray;
+}
+
+.fila{
+    display: flex;
+    width: 1024px;
+    
+    margin: 50px auto;
+    border: 2px solid var(--primary-color);
+}
+.fila .contBotones {
+     width: 50%;
+    background: blue;
+    text-align: center;
+    padding: 30px 20px; 
+
+}
+
+.contBotones h2 {
+    color: #f0f8ff;
+    font: 50px;
+    margin-bottom: 30px;
+}
+
+.contBotones button{
+    padding: 12px 30px;
+    background: var(--secundary-color);
+    color: var(--primary-color);
+    border: 1px solid yellow  ;
+
+    font-size: 14px;
+    margin: 12px;
+}
+
+.fila  .contFigura{
+    width: 50%;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+
+.contFigura h2{
+    font-size:40px;
+    color: var(--secundary-color);
+
+}
+
+.contFigura #figura {
+    
+    width: 180px;
+    height: 180px;
+    background: var(--secundary-color);
+    margin: 40px auto;
+    transition: 1s;
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg); 
+    /*
+    rotate=girar
+    scale= aumentar/disminuir
+    translate= posicion eje x,y
+    skew=Distorcionar
+    */
+
+}
+#figura.rombo{
+
+    transform: rotate(45deg);
+    
+  
+
+}
+
+#figura.rectangulo{
+    width: 300px;
+}
+
+
+#figura.triangulo{
+   
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid transparent;
+    background-color: transparent;
+    border-bottom: 100px solid black;
+    border-right: 100px solid transparent;
+}
+#figura.rectangulov{
+    height: 300px;
+}
+
+#figura.arriba{
+    transform: translatey(-100px);
+}
+
+#figura.abajo{
+    transform: translatey(100px);
+}
+
+#figura.derecha{
+    transform: translate(100px);
+
+}
+
+#figura.izquierda{
+    transform: translate(-100px);
+
+}
+
+#figura.diagonal{
+    transform: translate(100px, -100px);
+
+}
+
+#figura.imagen{
+    background: url("../img/WhatsApp\ Video\ 2022-06-02\ at\ 4.48.11\ PM.gif");
+
+}
+/*HOY*/
+
+#figura.trapecio{
+    width: 200px;
+    border-top: solid transparent 0px;
+    border-left: solid transparent 50px;
+    border-right: solid transparent 50px;
+    border-bottom: solid #181a18 100px;
+    border-right: 50px solid grey;
+    border-left: 50px solid grey;
+    border-top: 100px solid grey; 
+}
+
+#figura.ovalo{
+    width: 200px;
+    height: 100px;
+    background-color: #3a1700;
+    border-radius: 50%;
+}
+
+#figura.medioCirculo{
+    width: 200px;
+    height: 100px;
+    background-color: #181a18;
+    border-radius: 100px 100px 0 0;
+
+}
+
+#figura.tipoHoja{
+    width: 200;
+    height: 100;
+    background-color: #043304;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.fila .contForm{
+    width: 50%;
+    background: #3712bd;
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+
+.fila .contForm{
+    font-size: 30px;
+}
+
+.fila .contForm{
+    font-size: 24px;
+}
+
+.contForm form .formGroup{
+    padding: 10px 50px;
+    text-align: Left;
+
+}
+
+form .formGroup label{
+    display: block;
+    font-size:20px;
+  
+}
+form .formGroup input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+form .formGroup select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+form .formGroup textarea{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+form button{
+    background: #cc00fa;
+    font-size: 10px;
+    padding: 10px 15px;
+    color: #000000;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form button:hover{
+    padding: 12px 60px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+
+.fila .contAvatar{
+    text-align: center;
+    padding: 40px;
+    background: #EFEFEF;
+    width: 50%;
+}
+
+.fila .contAvatar img{
+    width: 300px;
+}
+
+.fila .contAvatar h3 {
+    font-size:30px;
+    color: #312929;
+    margin-bottom: 10px;
+
+}
+.fila .contAvatar p{
+    font-size:15px;
+    color: #312929;
+    margin-bottom: 10px;  
+}
+.contAvatar.Negro{
+    background: #000000; 
+}
+ 
+
+
+.contAvatar.Cafe{
+    background: #3a1700;
+    
+}
+.contAvatar.Cafe p{
+    color: #EFEFEF;
+}
+.contAvatar.Cafe h3{
+    color: #EFEFEF;
+}
+.contAvatar.Amarillo{
+    background: #ffee00;
+    
+}
+
+.contAvatar.Azul{
+    background:#0080ff;
+    
+}
+
+.contAvatar.Verde{
+    background: #00ff00;
+    
+}
+
+.contAvatar.Gris{
+    background: #727272;
+    
+}
+
+.btn-nav{
+    position: absolute;
+    bottom: 10px 10px;
+    right: 120px;
+    background: #0000ff;
+    color: #0c0f13;
+    padding: 12px 40px;
+    text-decoration:none;
+}
+
+
+
+
+
+
